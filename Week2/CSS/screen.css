@@ -1,0 +1,14 @@
+h1 {
+	color:#339;
+}
+
+h1 a {
+	background-color: #5a5;
+	color: white;
+	padding: 4px;
+	border: 4px solid #666;
+}
+
+h1 a:hover {
+	background-color: #933
+}
