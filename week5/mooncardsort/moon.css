@@ -1,0 +1,96 @@
+
+* {
+	font-family: sans-serif;
+	margin:0;
+}
+
+body {
+	background:url(http://photography.nationalgeographic.com/staticfiles/NGS/Shared/StaticFiles/Photography/Images/Content/moon-footprint-GPN2001000014-lw.jpg) fixed center;
+	background-size: cover;
+}
+
+h1 {
+	width: 734px;
+	margin: 0 auto;
+	height: 40px;
+	font-weight: normal;
+	font-size: 44;
+	background: rgba(150, 150, 150, 0.8);
+	padding: 80px 0px 0px 16px;
+	color: white;
+	border-bottom: 4px solid black;
+}
+
+#content {
+	width: 750px;
+	margin: 0 auto;
+}
+
+/*-----------------------FIRST COLUMN: IMAGES------------------------------------------*/
+
+img {
+	margin-bottom: 6px;
+	margin-top: 6px;
+	width: 400px;
+	border: 5px solid white;
+}
+
+#column1 {
+	width: 410px;
+	border-right: 3px solid rgba(0,0,0, 0.5);
+	padding-right: 7px;
+	display: inline-block;
+	float:left;
+}
+/*-----------------------SECOND COLUMN: TEXT------------------------------------------*/
+
+
+#column2 {
+	background: rgba(200, 255, 255, 0.7);
+	width: 320px;
+	min-height: 500px;
+	margin-left: 10px;
+	display: inline-block;
+	float:left;
+
+}
+
+h2 {
+	padding: 12px 12px 4px 12px;
+	color: white;
+	font-weight: normal;
+	text-shadow: 1px 1px 2px #000;
+	border-bottom: 2px solid rgba(0,0,0, 0.5);
+	background: rgba(0,0,0, 0.5);
+
+}
+
+p {
+	padding: 6px 12px 6px 12px;
+	text-shadow: 1px 1px 2px #eee;
+	line-height: 22px;
+}
+
+
+h3 {
+	padding: 6px 12px 4px 12px;
+	color: white;
+	font-weight: normal;
+	text-shadow: 1px 1px 2px #000;
+	border-bottom: 2px solid rgba(0,0,0, 0.5);
+	background: rgba(0,0,0, 0.2);
+}
+
+ul {
+	list-style: none;
+	padding: 8px 0 0 12px;
+	text-shadow: 1px 1px 2px #eee;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.6)
+
+}
+
+
+
+
+
+
