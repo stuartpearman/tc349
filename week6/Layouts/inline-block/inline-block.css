@@ -1,0 +1,25 @@
+.container{
+	margin: 0 4%;
+}
+header{
+	background: #aaa;
+	color:white;
+	padding: 10px 0 0 10px;
+	text-align: center;
+}
+section {
+	text-align: center;
+}
+article{
+	width: 280px;
+	display:inline-block;
+	background: #edc;
+	margin:5px;
+	text-align: left;
+	padding: 10px;
+}
+footer {
+	background: #aaa;
+	color: white;
+	padding: 6px;
+}
