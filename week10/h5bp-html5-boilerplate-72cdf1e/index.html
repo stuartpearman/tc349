@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Stuart Pearman</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <header data-420="background-image:url(img/masthead.jpg); position:fixed; top:-415px;" data-419="background:#333; position:relative; width:100%; top:0;">
+            <h1>Stuart Pearman</h1>
+            <h2>Web Designer - East Lansing, MI</h2>
+        </header>
+
+        <div id="map-location" data-419="background-image:url(img/bw-map.jpg); opacity:0.5;" data-200="margin-top:0;"
+    data-420="background-image:url(img/map.jpg); opacity:1; margin-top:580px;">
+        </div>
+        <nav data-0="position:absolute;top:850px;" data-680="position:absolute;top:850px;"data-681="position:fixed;top:160px;">
+            <ul>
+                <li><a href="#about">About Stuart</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <article>
+            <section id="about">
+                <h3>About Stuart</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac erat libero. Phasellus vestibulum blandit nunc eget volutpat. Maecenas ultrices nunc est, sit amet condimentum turpis blandit vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris pellentesque laoreet sem id congue. Integer venenatis vulputate enim, nec imperdiet turpis volutpat vel. </p>
+            </section>
+            <section id="portfolio">
+                <h3>Portfolio</h3>
+            <ul class="gallery">
+                <li><img alt="portfolio" src="img/portfolio.jpg" class="sibling" /></li>
+                <li><img alt="portfolio" src="img/portfolio.jpg" /></li>
+                <li><img alt="portfolio" src="img/portfolio.jpg" class="sibling" /></li>
+                <li><img alt="portfolio" src="img/portfolio.jpg" /></li>
+                <li><img alt="portfolio" src="img/portfolio.jpg" /></li>
+                
+            </ul>
+            </section>
+            <section id="experience">
+                <h3>Work Experience</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac erat libero. Phasellus vestibulum blandit nunc eget volutpat. Maecenas ultrices nunc est, sit amet condimentum turpis blandit vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris pellentesque laoreet sem id congue. Integer venenatis vulputate enim, nec imperdiet turpis volutpat vel.   </p>
+            </section>
+            <section id="contact">
+                <h3>Contact</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac erat libero. Phasellus vestibulum blandit nunc eget volutpat. Maecenas ultrices nunc est, sit amet condimentum turpis blandit vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris pellentesque laoreet sem id congue. Integer venenatis vulputate enim, nec imperdiet turpis volutpat vel. </p>
+            </section>
+        </article>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/skrollr.min.js"></script>
+        <script src="js/vendor/skrollr.menu.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script type="text/javascript">
+        if ($(window).width() > 600) { 
+            var s = skrollr.init();
+
+            skrollr.menu.init(s, {
+    //skrollr will smoothly animate to the new position using `animateTo`.
+    animate: true,
+
+    //The easing function to use.
+    easing: 'sqrt',
+
+    //How long the animation should take in ms.
+    duration: function(currentTop, targetTop) {
+        //By default, the duration is hardcoded at 500ms.
+        return 500;
+
+        //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+        //return Math.abs(currentTop - targetTop) * 10;
+    },
+
+    //If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
+    //You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
+    //handleLink: function(link) {
+        //return 400;//Hardcoding 400 doesn't make much sense.
+    //}
+});
+}
+        </script>
+    </body>
+</html>
