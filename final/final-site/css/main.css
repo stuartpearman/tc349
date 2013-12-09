@@ -1,0 +1,580 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+/*.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}*/
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body{
+    background: url(../img/contactbg.jpg) fixed;
+    background-size: cover;
+    transition: all 1s;
+}
+
+.black {
+    
+}
+
+.overlay {
+    position: fixed;
+        top: 0px;
+        bottom: 0px;
+        left:0px;
+        right: 0px;
+    background: rgba(0,0,0,0.7);
+    visibility: hidden;
+    z-index: -1;
+}
+
+.overlay-active {
+    visibility: visible;
+    z-index: 2;
+}
+
+h2 {
+    line-height: 34px;
+    font-size: 2.5em;
+    font-weight: lighter;
+}
+
+/*----------Header & Navigation----------*/
+
+h1{
+    position: absolute;
+    right:8000px;
+}
+
+header img {
+    width: -moz-calc(100% - 300px);
+    width: -webkit-calc(100% - 300px);
+    width: -o-calc(100% - 300px);
+    transition: all 1s;
+}
+
+nav ul {
+    background: #333;
+    padding-left: 16px
+}
+
+nav li {
+    display: inline-block;
+    background: #333;
+    padding: 10px 12px 0px 12px;
+    color: #e6e6e6;
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+
+nav li:hover {
+    background: #666;
+}
+
+nav li a, nav li a:hover {
+}
+
+/*-------------Blog Feed----------------*/
+
+.columncenter {
+    margin-right: 308px;
+    margin-left: 0px;
+    display: inline-block;
+    transition: all 1s;
+}
+
+article {
+    background: #eee;
+    border: 3px solid #222;
+    border-radius: 0px;
+    margin: 16px;
+    padding: 12px;
+}
+
+article:hover{
+    cursor: pointer;
+}
+
+article h2, article h3 {
+    display: inline;
+}
+
+article h2 {
+    color: #222;
+}
+
+article h3 {
+    position: relative;
+    float: right;
+    margin-right: 12px;
+    color: #222;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-top: 4px;
+}
+
+article p {
+    color: #222;
+    border-top: 2px solid #222;
+    padding-top: 8px;
+}
+
+.focus {
+    margin: 16px 50px 16px 50px;
+    padding: 24px;
+    z-index: 6;
+    position: fixed;
+    top: 10%;
+    max-height: 65%;
+    overflow: scroll;
+}
+
+.focus h2 {
+    font-size: 3em;
+    position: fixed;
+    background: rgba(255,255,255,0.9);
+    padding: 22px 5% 0px 24px;
+    margin-left: -24px;
+    margin-top: -24px;
+    border-right: 2px solid #222;
+    border-bottom: 2px solid #222;
+}
+
+.focus p {
+    margin-top: 32px;
+    padding-top: 8px;
+    font-size: 1.2em;
+
+}
+
+article, article p, article h2, article h3 {}
+
+/*-------------------SIDEBAR---------------------*/
+
+.sidebar {
+    float: right;
+    width: 300px;
+    height: 100%;
+    background: #222;
+    background-size: 150px;
+    position: fixed;
+        top: 0px;
+        right: 0px;
+    overflow: scroll;
+    padding: 0 4px 0 4px;
+    transition: all 1s;
+}
+
+.sidebar h2 {
+    color: #eee;
+    padding: 16px 0 0px 12px;
+    margin: 0 -4px 6px -4px;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar h3 {
+    color: #cdcdcd;
+    clear: both;
+    margin: 12px 4px -6px 0;
+    width: 288px;
+    padding: 6px 4px 6px 6px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid black;
+    border-bottom: none;
+    clear: both;
+    font-weight: lighter;
+}
+
+.sidebar p {
+    position: absolute;
+    bottom: 4px;
+    color: #eee;
+    font-size: .8em;
+    margin-left: 4px;
+}
+
+.twitter-timeline {
+    width: 300px;
+    height: 280px;
+    float: right;
+    border: 1px solid #000;
+    margin-bottom: 12px;
+}
+
+.spotify-playlist {
+    float: right;
+    width: 300px;
+    height: 80px;
+    border: none;
+    margin-bottom: 12px;
+}
+
+.icon {
+    width: 90px;
+    position: relative;
+    border-radius: 10px;
+    margin: 6px 0px 6px 6px;
+}
+
+.icon:hover {
+    top:-2px;
+    left:-2px;
+    
+}
+
+/*--------------------ABOUT ME--------------------*/
+
+
+.about-me {
+    height: 100%;
+}
+
+#aboutme-img {
+    position: fixed;
+        right: 540px;
+        transition:all 3s;
+        width: 900px;
+}
+
+.about-me-bio {
+    position: fixed;
+        right: 308px;
+
+    background: #eee;
+    padding: 12px;
+    width: 380px;
+    height: 80%;
+    transition: all 1s;
+}
+
+.about-me-bio h2 {
+    position: fixed;
+    width: 380px;
+    margin: -12px;
+    padding: 12px 12px 0 12px;
+    margin-bottom: 6px;
+    color: #fff;
+    background: #222;
+}
+
+.about-me-bio p {
+    position: fixed;
+    width: 380px;
+    margin-top: 68px;
+    overflow: scroll;
+    font-size: 1.3em;
+    color: #222;
+    height: 70%;
+}
+
+/*------------------ABOUT THE BLOG---------------*/
+
+.aboutblog-body {
+}
+
+.about-blog {
+    width: 33%;
+    position: absolute;
+        left: 0px;
+    background: #eee;
+    color: #222;
+    padding: 0px 1% 12px 1%;
+}
+
+.about-blog h2 {
+    margin: 0 -4% 0 -9%;
+    padding: 24px 3% 0px 9%;
+    line-height: 32px;
+    background: #222;
+    color: #eee;
+}
+
+.about-blog p {
+    font-size: 1em;
+    padding-top: 4px;
+}
+
+.future-blog {
+    margin: -12px 308px 0 35%;
+    background: #222;
+}
+
+.future-blog h3 {
+    padding-top: 28px;
+    margin: 12px;
+    color: #eee;
+    font-size: 1.5em;
+    font-weight: lighter;
+    line-height: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.future-blog p {
+    color: #eee;
+    margin: 0 12px 12px 12px;
+    font-size: 1em;
+    padding-bottom: 12px;
+}
+
+.about-blog, .future-blog {
+    transition: all 1s;
+}
+
+/*---------------------CONTACT ME-----------------------*/
+
+.contact-body {
+    background: url(../img/contactbg.jpg) fixed;
+    background-size: 1600px;
+}
+
+.card * {color: #000;}
+
+.card {
+    margin: 0 auto;
+    position: relative;
+        right: 154px;
+        top: 200px;
+    width: 330px;
+    border: 3px solid #000;
+    text-align: center;
+    padding: 16px;
+    background: none;
+    transition: all .7s;
+    background: rgba(220,220,220,0.4);
+}
+
+.card h2 {
+    font-size: 2.8em;
+    font-weight: lighter;
+
+}
+
+.card p {
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+
+
+/* ==========================================================================
+                     MEDIA QUERIES
+   ========================================================================== */
+
+@media (max-width: 1100px) {
+    #aboutme-img {
+        position: fixed;
+            right: 540px;
+            
+            width: 700px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    nav li {
+        font-size: 1em;
+        padding: 10px 6px 0px 6px;    }
+}
+
+@media (max-width: 700px) {
+    .sidebar {
+        right: -308px;
+    }
+    .columncenter {
+        margin-right: 30px;
+    }
+
+    header img {
+        width: 100%;
+    }
+    
+    .about-me-bio {
+        right: 0px;
+    }
+    #aboutme-img {
+        right: 200px;
+
+    }
+    .future-blog {
+    margin: -12px 0px 0 52%;
+    }
+    .about-blog {
+    width: 50%;
+    position: absolute;
+        left: 0px;
+    background: #eee;
+    color: #222;
+    padding: 0px 1% 12px 1%;
+}
+    .card {
+        right:0px;
+    }
+
+
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
